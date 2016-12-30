@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-		<title>Tranont | 404 Error</title>
+		<title>Tranont International | 404 Error</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
@@ -23,6 +23,9 @@
     /**** BEGIN Navbar Stylings ****/
     ul li img {
       width: 30px;
+    }
+    .dropdown {
+      letter-spacing: 2px;
     }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -193,7 +197,6 @@
         line-height: 36px;
       }
       h1, h3 {
-        text-transform: uppercase;
         letter-spacing: 2px;
       }
       html, body {
@@ -429,43 +432,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-        // change the direction of the Font Awesome caret when panel expand and collapse
-        $('.button').click(function(){
-          $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
-        });
-        // FAQ accordion functionality
-        $(document).ready(function() {
-            var parentDivs = $('#nestedAccordion div'),
-            childDivs = $('#nestedAccordion h3').siblings('div');
-
-            $('#nestedAccordion h2').click(function(){
-                parentDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-            $('#nestedAccordion h3').click(function(){
-                childDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-        });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>
