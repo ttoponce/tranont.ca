@@ -212,7 +212,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
       }
-      p {
+      p, .col-xs-6 > ul > li {
         font-size: 16px;
         letter-spacing: 1px;
       }
@@ -242,11 +242,8 @@
       .col-xs-4 h4 {
         margin-top: 20px;
       }
-      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2 {
+      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
-      }
-      .col-xs-12 p {
-        padding: 0 15px;
       }
       .collapsibale-hr {
         margin: 20px 10px;
@@ -302,7 +299,6 @@
       }
       .oneview-diagram {
         width: 400px;
-        max-width: 100%;
         display: block;
         margin: 1% auto 0 auto;
       }
@@ -591,9 +587,6 @@
         }
       }
       @media only screen and (max-width: 400px) {
-        li {
-          font-size: 11px;
-        }
         .center h4 {
           font-size: 12px;
         }
@@ -614,7 +607,7 @@
         .col-xs-12 li {
           font-size: 10px;
         }
-        .col-xs-12 p {
+        .col-xs-12 p, .col-xs-6 > ul > li, .col-xs-6 > p {
           font-size: 12px;
         }
         .dissappearing-br {
