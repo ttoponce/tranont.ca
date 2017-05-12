@@ -190,6 +190,24 @@
         display: none;
       }
     }
+    @media only screen and (max-width: 414px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 21%;
+      }
+    }
+    @media only screen and (max-width: 375px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 19%;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 6%;
+      }
+    }
     /**** END Navbar Stylings ****/
 
       /**** BEGIN Main Page Stylings ****/
@@ -556,31 +574,27 @@
         margin: 0 auto;
       }
       #buttonEventMovie {
-        border: 2px solid #ffffff;
-        border-radius: 25px;
+        border: none;
         color: #ffffff;
         padding: 1px 15px;
         display: block;
         margin: 0 auto;
         letter-spacing: 1px;
         position: relative;
-        top: -120px;
+        top: -170px;
         left: 5px;
-        background: transparent;
-        width: 52%;
+        background-color: rgba(5,83,138,0.5);
       }
       #buttonEventMovie:hover {
-        color: #ffffff;
-        background: rgba(192, 192, 192, 0.3);
-        border-color: #ffffff;
         text-decoration: none;
       }
       #buttonEventMovie h5 {
-        font-size: 12px;
+        font-size: 40px;
         letter-spacing: 2px;
         font-weight: bold;
         position: relative;
-        top: 1px;
+        top: -4px;
+        left: 1px;
       }
       #eventMovie {
         position: relative;
@@ -648,8 +662,8 @@
           top: 70px;
         }
         #buttonEventMovie {
-          top: -65px;
-          width: 64%;
+          top: -108px;
+          left: 7px;
         }
         #dissappearing-br {
           display: none;
@@ -719,9 +733,6 @@
         }
         .top-section-text {
           top: 70px;
-        }
-        #buttonEventMovie {
-          top: -70px;
         }
         #video-button {
           font-size: 30px;
@@ -849,11 +860,11 @@
           width: 235px;
         }
         #buttonEventMovie {
-          top: -43px;
-          width: 81%;
+          top: -71px;
         }
         #buttonEventMovie h5 {
-          letter-spacing: 1px;
+          font-size: 33px;
+          left: -4px;
         }
       }
       @media only screen and (max-width: 730px) {
